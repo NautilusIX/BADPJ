@@ -1,0 +1,234 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Coach.master.cs" Inherits="BADPJ_website.Coach" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GetGud - Esports and Gaming Courses Website HTML Template</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/plugin/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/plugin/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="assets/css/plugin/swiper.css">
+    <link rel="stylesheet" href="assets/css/arafat-font.css">
+    <link rel="stylesheet" href="assets/css/plugin/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <form id="form4" runat="server">
+        <!-- start preloader -->
+    <div class="preloader" id="preloader"></div>
+    <!-- end preloader -->
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+    <!-- header-section start -->
+    <header class="header-section">
+        <div class="overlay">
+            <div class="container">
+                <div class="row d-flex header-area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.aspx">
+                            <img src="assets/images/GGlogo6.png" class="logo" alt="logo">
+                        </a>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-content">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbar-content">
+                            
+                            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown main-navbar">
+                                    <a class="nav-link " href="index.aspx"
+                                         data-bs-auto-close="outside">Home</a>
+
+                                </li>
+                                
+                                <li class="nav-item dropdown main-navbar">
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside">Bookings</a>
+                                    <ul class="dropdown-menu main-menu shadow">
+                                        <li><a class="nav-link" href="BookingView.aspx">Edit Your Bookings</a></li>
+                                        <li><a class="nav-link" href="BookingsItemTemplate.aspx">View Your Bookings</a></li>
+                                        <li><a class="nav-link" href="BookingPDF.aspx">View Invoice</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown main-navbar">
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)"
+                                        data-bs-toggle="dropdown" data-bs-auto-close="outside">Coaches</a>
+                                    <ul class="dropdown-menu main-menu shadow">
+
+                                        <li><a class="nav-link" href="COACH_OWN_LISTING.aspx"
+                                         data-bs-auto-close="outside">View Own Listings</a></li>
+                                        <li><a class="nav-link" href="Create_Listing.aspx">Add Listings</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown main-navbar">
+                                    <a class="nav-link " href="Review.aspx"
+                                         data-bs-auto-close="outside">Review a Coach</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.aspx">Contact Us</a>
+                                </li>
+                            </ul>
+                            <div class="right-area header-action d-flex align-items-center max-un">
+                                <asp:Button ID="btn_exit" runat="server" class="cmn-btn alt" Text="Sign Out" OnClick="btn_exit_Click" />
+                                <a href="UserProfile.aspx" class="cmn-btn"> 
+                                    <asp:Label ID="lbl_CoachUser" runat="server" Text=""></asp:Label>
+                                    <i class="fas fa-user-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+             
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="newsletter">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="section-area mb-30 text-center">
+                                <h5 class="sub-title">Get ready for the next level</h5>
+                                <h3 class="title">Subscribe for updates</h3>
+                            </div>
+                            <div class="form-group d-flex align-items-center">
+                                <img src="assets/images/icon/email.png" alt="icon">
+                                <input type="text" placeholder="Your email address">
+                                <button class="cmn-btn">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-area pt-120">
+                    <div class="footer-top pb-120">
+                        <div class="row">
+                            <div class="col-xl-3 col-6">
+                                <div class="footer-box">
+                                    <h5>Company</h5>
+                                    <ul class="footer-link">
+                                        <li><a href="index.aspx">About Us</a></li>
+                                        <li><a href="loyalty.aspx">Loyalty</a></li>
+                                        <li><a href="index.aspx">Careers</a></li>
+                                        <li><a href="Review.aspx">Customer Reviews</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-6">
+                                <div class="footer-box">
+                                    <h5>COACHES</h5>
+                                    <ul class="footer-link">
+                                        <li><a href="coachregister.aspx">Become a Coach</a></li>
+                                        <li><a href="see_Listing.aspx">Our Coaches</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-6">
+                                <div class="footer-box">
+                                    <h5>SUPPORT</h5>
+                                    <ul class="footer-link">
+                                        <li><a href="login.aspx">Privacy Policy</a></li>
+                                        <li><a href="login.aspx">Terms of Use</a></li>
+                                        <li><a href="login.aspx">FAQ</a></li>
+                                        <li><a href="login.aspx">Security</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-6">
+                                <div class="social">
+                                    <h5>FOLLOW US</h5>
+                                    <ul class="footer-link">
+                                        <li><a href="https://www.facebook.com/profile.php?id=100089974823204">
+                                            <span><i class="fab fa-facebook-f"></i></span>
+                                            facebook
+                                        </a></li>
+                                        <li><a href="https://twitter.com/GetGudWifUS">
+                                            <span><i class="fab fa-twitter"></i></span>
+                                            twitter
+                                        </a></li>
+                                        <li><a href="https://www.youtube.com/">
+                                            <span><i class="fab fa-youtube"></i></span>
+                                            youtube
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-lg-6 d-flex justify-content-center justify-content-lg-start order-lg-0 order-1">
+                                <div class="copyright text-center">
+                                    <p>Copyright © 2022 GetGud | Designed by <a href="https://themeforest.net/user/uiaxis">UIAXIS.</a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div
+                                    class="language d-flex align-items-center justify-content-center justify-content-lg-end">
+                                    <h6 class="m-none">Select your language</h6>
+                                    <select>
+                                        <option>English</option>
+                                        <option>Arabic</option>
+                                        <option>Bangla</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End -->
+
+    <!--==================================================================-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="assets/js/plugin/slick.js"></script>
+    <script src="assets/js/plugin/ion.rangeSlider.min.js"></script>
+    <script src="assets/js/plugin/swiper.js"></script>
+    <script src="assets/js/plugin/jquery.nice-select.min.js"></script>
+    <script src="assets/js/plugin/counter.js"></script>
+    <script src="assets/js/plugin/jquery.downCount.js"></script>
+    <script src="assets/js/plugin/waypoint.min.js"></script>
+    <script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugin/wow.min.js"></script>
+    <script src="assets/js/plugin/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+    </form>
+    <script type="text/javascript">
+        window.__be = window.__be || {};
+        window.__be.id = "63e3639896b27800077f73e3";
+        (function () {
+            var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+            be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+        })();
+    </script>
+    <!-- End of ChatBot code -->
+    <!-- End of ChatBot code -->
+    <script>(function () { var pp = document.createElement('script'), ppr = document.getElementsByTagName('script')[0]; stid = 'YWdWZmR5UHZrN0RwNFkvK1IwTzdTZz09'; pp.type = 'text/javascript'; pp.async = true; pp.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 's01.live2support.com/dashboardv2/chatwindow/'; ppr.parentNode.insertBefore(pp, ppr); })();</script>
+
+</body>
+</html>

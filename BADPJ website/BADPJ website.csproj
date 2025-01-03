@@ -1,0 +1,774 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DFE3D802-661E-4B63-B986-C65B1FD70AD2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BADPJ_website</RootNamespace>
+    <AssemblyName>BADPJ website</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44369</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Stripe.net, Version=41.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Stripe.net.41.6.0\lib\net461\Stripe.net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminGridview.aspx" />
+    <Content Include="adminregister.aspx" />
+    <Content Include="admin.aspx" />
+    <Content Include="App_Data\GetGud.mdf" />
+    <Content Include="App_Data\GetGud_log.ldf">
+      <DependentUpon>GetGud.mdf</DependentUpon>
+    </Content>
+    <Content Include="assets\css\arafat-font.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\fontawesome.min.css" />
+    <Content Include="assets\css\jquery-ui.css" />
+    <Content Include="assets\css\plugin\animate.css" />
+    <Content Include="assets\css\plugin\ion.rangeSlider.min.css" />
+    <Content Include="assets\css\plugin\magnific-popup.css" />
+    <Content Include="assets\css\plugin\nice-select.css" />
+    <Content Include="assets\css\plugin\owl.carousel.min.css" />
+    <Content Include="assets\css\plugin\owl.theme.default.min.css" />
+    <Content Include="assets\css\plugin\slick.css" />
+    <Content Include="assets\css\plugin\swiper.css" />
+    <Content Include="assets\css\plugin\xzoom.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\demo\chart-area-demo.js" />
+    <Content Include="assets\demo\chart-bar-demo.js" />
+    <Content Include="assets\demo\chart-pie-demo.js" />
+    <Content Include="assets\demo\datatables-demo.js" />
+    <Content Include="assets\images\01.png" />
+    <Content Include="assets\images\02.png" />
+    <Content Include="assets\images\03.png" />
+    <Content Include="assets\images\04.png" />
+    <Content Include="assets\images\about-us-img.png" />
+    <Content Include="assets\images\author-profile-2.png" />
+    <Content Include="assets\images\author-profile-3.png" />
+    <Content Include="assets\images\author-profile-4.png" />
+    <Content Include="assets\images\author-profile-bg.png" />
+    <Content Include="assets\images\author-profile.png" />
+    <Content Include="assets\images\banner-coaches.png" />
+    <Content Include="assets\images\banner-coaching-bg.png" />
+    <Content Include="assets\images\banner-coaching.png" />
+    <Content Include="assets\images\banner-illus.png" />
+    <Content Include="assets\images\blog-banner-bg.png" />
+    <Content Include="assets\images\blog-details-image-1.png" />
+    <Content Include="assets\images\blog-image-1.png" />
+    <Content Include="assets\images\blog-image-2.png" />
+    <Content Include="assets\images\blog-image-3.png" />
+    <Content Include="assets\images\blog-image-4.png" />
+    <Content Include="assets\images\blog-image-5.png" />
+    <Content Include="assets\images\blog-sidebar-image-1.png" />
+    <Content Include="assets\images\blog-sidebar-image-2.png" />
+    <Content Include="assets\images\blog-sidebar-image-3.png" />
+    <Content Include="assets\images\call-action-image-1.png" />
+    <Content Include="assets\images\call-action-image-2.png" />
+    <Content Include="assets\images\call-action-image-3.png" />
+    <Content Include="assets\images\call-to-action-2-bg.png" />
+    <Content Include="assets\images\call-to-action-bg.png" />
+    <Content Include="assets\images\call-to-action.png" />
+    <Content Include="assets\images\card-1.png" />
+    <Content Include="assets\images\card-2.png" />
+    <Content Include="assets\images\card-3.png" />
+    <Content Include="assets\images\card-details-overlay.png" />
+    <Content Include="assets\images\card-game-1.png" />
+    <Content Include="assets\images\card-game-2.png" />
+    <Content Include="assets\images\card-game-3.png" />
+    <Content Include="assets\images\card-game-4.png" />
+    <Content Include="assets\images\card-game-5.png" />
+    <Content Include="assets\images\card-game-6.png" />
+    <Content Include="assets\images\cart-banner-bg.png" />
+    <Content Include="assets\images\character-index-4.png" />
+    <Content Include="assets\images\character.png" />
+    <Content Include="assets\images\character2-index-4.png" />
+    <Content Include="assets\images\choose-us-bg.png" />
+    <Content Include="assets\images\coach-banner-bg.png" />
+    <Content Include="assets\images\coaching-details-bg.png" />
+    <Content Include="assets\images\coaching-item-1.png" />
+    <Content Include="assets\images\coaching-item-2.png" />
+    <Content Include="assets\images\coaching-item-3.png" />
+    <Content Include="assets\images\coaching-item-4.png" />
+    <Content Include="assets\images\coaching-item-5.png" />
+    <Content Include="assets\images\coaching-item-6.png" />
+    <Content Include="assets\images\coaching-item-7.png" />
+    <Content Include="assets\images\coaching-item-8.png" />
+    <Content Include="assets\images\coaching-item-9.png" />
+    <Content Include="assets\images\coaching-profile-1.png" />
+    <Content Include="assets\images\coaching-profile-2.png" />
+    <Content Include="assets\images\coaching-profile-3.png" />
+    <Content Include="assets\images\coaching-profile-4.png" />
+    <Content Include="assets\images\coaching-profile-5.png" />
+    <Content Include="assets\images\coaching-profile-6.png" />
+    <Content Include="assets\images\coaching-profile-7.png" />
+    <Content Include="assets\images\coaching-profile-8.png" />
+    <Content Include="assets\images\coaching-profile-9.png" />
+    <Content Include="assets\images\community-01.png" />
+    <Content Include="assets\images\community-02.png" />
+    <Content Include="assets\images\community-03.png" />
+    <Content Include="assets\images\community-04.png" />
+    <Content Include="assets\images\community-05.png" />
+    <Content Include="assets\images\community-06-alt.png" />
+    <Content Include="assets\images\community-06.png" />
+    <Content Include="assets\images\comunity-circle.png" />
+    <Content Include="assets\images\contact-banner-bg.png" />
+    <Content Include="assets\images\contact-us-illus.png" />
+    <Content Include="assets\images\customers-2.png" />
+    <Content Include="assets\images\customers-3.png" />
+    <Content Include="assets\images\customers-4.png" />
+    <Content Include="assets\images\customers-5.png" />
+    <Content Include="assets\images\customers.png" />
+    <Content Include="assets\images\dashboard-banner-bg.png" />
+    <Content Include="assets\images\error-image.png" />
+    <Content Include="assets\images\error.png" />
+    <Content Include="assets\images\fav.png" />
+    <Content Include="assets\images\features-bg.png" />
+    <Content Include="assets\images\features-second-bg.png" />
+    <Content Include="assets\images\features-second-illus.png" />
+    <Content Include="assets\images\footer-bg-left.png" />
+    <Content Include="assets\images\footer-bg-right.png" />
+    <Content Include="assets\images\game-1.png" />
+    <Content Include="assets\images\game-2.png" />
+    <Content Include="assets\images\game-3.png" />
+    <Content Include="assets\images\game-4.png" />
+    <Content Include="assets\images\game-5.png" />
+    <Content Include="assets\images\game-6.png" />
+    <Content Include="assets\images\game-bg.png" />
+    <Content Include="assets\images\games-img-1.png" />
+    <Content Include="assets\images\games-img-2.png" />
+    <Content Include="assets\images\games-img-3.png" />
+    <Content Include="assets\images\gift-card-1.png" />
+    <Content Include="assets\images\gift-card-2.png" />
+    <Content Include="assets\images\gift-card-3.png" />
+    <Content Include="assets\images\gift-card-4.png" />
+    <Content Include="assets\images\gift-card-5.png" />
+    <Content Include="assets\images\gift-card-6.png" />
+    <Content Include="assets\images\gift-card-7.png" />
+    <Content Include="assets\images\gift-card-illus.png" />
+    <Content Include="assets\images\how-works-2-bg.png" />
+    <Content Include="assets\images\how-works-3-bg.png" />
+    <Content Include="assets\images\how-works-4-bg.png" />
+    <Content Include="assets\images\how-works-bg.png" />
+    <Content Include="assets\images\how-works-popup.png" />
+    <Content Include="assets\images\icon\arrow-top.png" />
+    <Content Include="assets\images\icon\blog-sidebar-icon-1.png" />
+    <Content Include="assets\images\icon\blog-sidebar-icon-2.png" />
+    <Content Include="assets\images\icon\card-icon-1.png" />
+    <Content Include="assets\images\icon\card-icon-2.png" />
+    <Content Include="assets\images\icon\card-icon-3.png" />
+    <Content Include="assets\images\icon\cart-icon.png" />
+    <Content Include="assets\images\icon\check-2.png" />
+    <Content Include="assets\images\icon\check-3.png" />
+    <Content Include="assets\images\icon\check-4.png" />
+    <Content Include="assets\images\icon\check-5.png" />
+    <Content Include="assets\images\icon\check.png" />
+    <Content Include="assets\images\icon\choose-us-icon-1.png" />
+    <Content Include="assets\images\icon\choose-us-icon-2.png" />
+    <Content Include="assets\images\icon\choose-us-icon-3.png" />
+    <Content Include="assets\images\icon\choose-us-icon-4.png" />
+    <Content Include="assets\images\icon\choose-us-icon-5.png" />
+    <Content Include="assets\images\icon\coach-icon-1.png" />
+    <Content Include="assets\images\icon\coach-icon-2.png" />
+    <Content Include="assets\images\icon\coach-icon-3.png" />
+    <Content Include="assets\images\icon\counter-icon-1.png" />
+    <Content Include="assets\images\icon\counter-icon-2.png" />
+    <Content Include="assets\images\icon\counter-icon-3.png" />
+    <Content Include="assets\images\icon\credit-card.png" />
+    <Content Include="assets\images\icon\crystal.png" />
+    <Content Include="assets\images\icon\dashboard-menu-1.png" />
+    <Content Include="assets\images\icon\dashboard-menu-2.png" />
+    <Content Include="assets\images\icon\dashboard-menu-3.png" />
+    <Content Include="assets\images\icon\dashboard-menu-4.png" />
+    <Content Include="assets\images\icon\dashboard-menu-5.png" />
+    <Content Include="assets\images\icon\dashboard-menu-6.png" />
+    <Content Include="assets\images\icon\date-icon.png" />
+    <Content Include="assets\images\icon\debit-card.png" />
+    <Content Include="assets\images\icon\description-icon-1.png" />
+    <Content Include="assets\images\icon\description-icon-2.png" />
+    <Content Include="assets\images\icon\description-icon-3.png" />
+    <Content Include="assets\images\icon\description-icon-4.png" />
+    <Content Include="assets\images\icon\description-icon-5.png" />
+    <Content Include="assets\images\icon\description-icon-6.png" />
+    <Content Include="assets\images\icon\dislike.png" />
+    <Content Include="assets\images\icon\email.png" />
+    <Content Include="assets\images\icon\ether.png" />
+    <Content Include="assets\images\icon\explore-now-icon-1.png" />
+    <Content Include="assets\images\icon\explore-now-icon-2.png" />
+    <Content Include="assets\images\icon\explore-now-icon-3.png" />
+    <Content Include="assets\images\icon\feature-icon-1.png" />
+    <Content Include="assets\images\icon\feature-icon-2.png" />
+    <Content Include="assets\images\icon\feature-icon-3.png" />
+    <Content Include="assets\images\icon\feature-icon-4.png" />
+    <Content Include="assets\images\icon\features-icon-1.png" />
+    <Content Include="assets\images\icon\features-icon-2.png" />
+    <Content Include="assets\images\icon\features-icon-3.png" />
+    <Content Include="assets\images\icon\features-icon-4.png" />
+    <Content Include="assets\images\icon\flag-usa.png" />
+    <Content Include="assets\images\icon\headphones.png" />
+    <Content Include="assets\images\icon\help-icon.png" />
+    <Content Include="assets\images\icon\how-works-arrow.png" />
+    <Content Include="assets\images\icon\how-works-icon-1.png" />
+    <Content Include="assets\images\icon\how-works-icon-2.png" />
+    <Content Include="assets\images\icon\how-works-icon-3.png" />
+    <Content Include="assets\images\icon\how-works-icon-4.png" />
+    <Content Include="assets\images\icon\how-works-icon-5.png" />
+    <Content Include="assets\images\icon\how-works-icon-6.png" />
+    <Content Include="assets\images\icon\left-icon.png" />
+    <Content Include="assets\images\icon\like.png" />
+    <Content Include="assets\images\icon\maps.png" />
+    <Content Include="assets\images\icon\mastercard.png" />
+    <Content Include="assets\images\icon\minus.png" />
+    <Content Include="assets\images\icon\paypal-2.png" />
+    <Content Include="assets\images\icon\paypal.png" />
+    <Content Include="assets\images\icon\platforms-icon-1.png" />
+    <Content Include="assets\images\icon\platforms-icon-2.png" />
+    <Content Include="assets\images\icon\platforms-icon-3.png" />
+    <Content Include="assets\images\icon\plus.png" />
+    <Content Include="assets\images\icon\popup-icon.png" />
+    <Content Include="assets\images\icon\press.png" />
+    <Content Include="assets\images\icon\protection.png" />
+    <Content Include="assets\images\icon\reply-icon.png" />
+    <Content Include="assets\images\icon\right-arrow-2.png" />
+    <Content Include="assets\images\icon\right-arrow-3.png" />
+    <Content Include="assets\images\icon\right-arrow-4.png" />
+    <Content Include="assets\images\icon\right-arrow.png" />
+    <Content Include="assets\images\icon\sales.png" />
+    <Content Include="assets\images\icon\search-icon-2.png" />
+    <Content Include="assets\images\icon\search-icon.png" />
+    <Content Include="assets\images\icon\show-hide.png" />
+    <Content Include="assets\images\icon\tier-icon-1.png" />
+    <Content Include="assets\images\icon\tier-icon-2.png" />
+    <Content Include="assets\images\icon\tier-icon-3.png" />
+    <Content Include="assets\images\icon\tier-icon-4.png" />
+    <Content Include="assets\images\icon\trigger1.png" />
+    <Content Include="assets\images\icon\trigger2.png" />
+    <Content Include="assets\images\icon\trigger3.png" />
+    <Content Include="assets\images\icon\tropy-icon-1.png" />
+    <Content Include="assets\images\icon\tropy-icon-2.png" />
+    <Content Include="assets\images\icon\update-btn.png" />
+    <Content Include="assets\images\icon\user.png" />
+    <Content Include="assets\images\icon\visa.png" />
+    <Content Include="assets\images\icon\winning-icon-1.png" />
+    <Content Include="assets\images\icon\winning-icon-2.png" />
+    <Content Include="assets\images\icon\winning-icon-3.png" />
+    <Content Include="assets\images\icon\winning-icon-4.png" />
+    <Content Include="assets\images\icon\winning-icon-5.png" />
+    <Content Include="assets\images\icon\winning-icon-6.png" />
+    <Content Include="assets\images\icon\winning-icon-7.png" />
+    <Content Include="assets\images\icon\winning-image-1.png" />
+    <Content Include="assets\images\icon\winning-image-2.png" />
+    <Content Include="assets\images\icon\winning-image-3.png" />
+    <Content Include="assets\images\icon\winning-image-4.png" />
+    <Content Include="assets\images\icon\wishlist.png" />
+    <Content Include="assets\images\index-2-banner-illus.png" />
+    <Content Include="assets\images\index-2-overlay-bottom.png" />
+    <Content Include="assets\images\index-2-overlay.png" />
+    <Content Include="assets\images\index-3-banner-illus.png" />
+    <Content Include="assets\images\index-3-overlay-bottom.png" />
+    <Content Include="assets\images\index-3-overlay-right.png" />
+    <Content Include="assets\images\index-3-overlay.png" />
+    <Content Include="assets\images\index-4-overlay.png" />
+    <Content Include="assets\images\index-5-banner-illus.png" />
+    <Content Include="assets\images\index-overlay.png" />
+    <Content Include="assets\images\join-now.png" />
+    <Content Include="assets\images\light-circle-faq.png" />
+    <Content Include="assets\images\light.png" />
+    <Content Include="assets\images\login-reg-bg.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\loyalty-banner-bg.png" />
+    <Content Include="assets\images\loyalty-program-bg.png" />
+    <Content Include="assets\images\paypal.png" />
+    <Content Include="assets\images\popup-video-bg-2.png" />
+    <Content Include="assets\images\popup-video-bg-3.png" />
+    <Content Include="assets\images\popup-video-bg-4.png" />
+    <Content Include="assets\images\popup-video-bg-5.png" />
+    <Content Include="assets\images\popup-video-bg-6.png" />
+    <Content Include="assets\images\popup-video-bg-7.png" />
+    <Content Include="assets\images\popup-video-bg.png" />
+    <Content Include="assets\images\preloader.gif" />
+    <Content Include="assets\images\product-1.png" />
+    <Content Include="assets\images\product-2.png" />
+    <Content Include="assets\images\product-3.png" />
+    <Content Include="assets\images\product-4.png" />
+    <Content Include="assets\images\product-5.png" />
+    <Content Include="assets\images\product-6.png" />
+    <Content Include="assets\images\product-7.png" />
+    <Content Include="assets\images\shop-banner.png" />
+    <Content Include="assets\images\shop-image-1.png" />
+    <Content Include="assets\images\svg\a-left-arrow.svg" />
+    <Content Include="assets\images\svg\b-right-arrow.svg" />
+    <Content Include="assets\images\svg\c-down-arrow.svg" />
+    <Content Include="assets\images\svg\d-right-arrow-2.svg" />
+    <Content Include="assets\images\svg\e-double-right-arrow.svg" />
+    <Content Include="assets\images\testimonials-img.png" />
+    <Content Include="assets\images\top-coaches-bg.png" />
+    <Content Include="assets\images\top-coches-1.png" />
+    <Content Include="assets\images\top-coches-2.png" />
+    <Content Include="assets\images\top-coches-3.png" />
+    <Content Include="assets\images\top-coches-4.png" />
+    <Content Include="assets\images\top-coches-bg.png" />
+    <Content Include="assets\images\visa.png" />
+    <Content Include="assets\images\winning-features-bg.png" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\fontawesome.js" />
+    <Content Include="assets\js\jquery-ui.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\plugin\apexcharts.min.js" />
+    <Content Include="assets\js\plugin\counter.js" />
+    <Content Include="assets\js\plugin\ion.rangeSlider.min.js" />
+    <Content Include="assets\js\plugin\jquery.downCount.js" />
+    <Content Include="assets\js\plugin\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\plugin\jquery.nice-select.min.js" />
+    <Content Include="assets\js\plugin\owl.carousel.min.js" />
+    <Content Include="assets\js\plugin\plugin.js" />
+    <Content Include="assets\js\plugin\slick.js" />
+    <Content Include="assets\js\plugin\swiper.js" />
+    <Content Include="assets\js\plugin\waypoint.min.js" />
+    <Content Include="assets\js\plugin\wow.min.js" />
+    <Content Include="assets\js\plugin\xzoom-setup.js" />
+    <Content Include="assets\js\plugin\xzoom.js" />
+    <Content Include="assets\webfonts\arafat-font.svg" />
+    <Content Include="assets\webfonts\fa-brands-400.svg" />
+    <Content Include="assets\webfonts\fa-regular-400.svg" />
+    <Content Include="assets\webfonts\fa-solid-900.svg" />
+    <Content Include="BookingInsert.aspx" />
+    <Content Include="BookingPDF.aspx" />
+    <Content Include="BookingsItemTemplate.aspx" />
+    <Content Include="BookingView.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="coachregister.aspx" />
+    <Content Include="Coach_Listing.aspx" />
+    <Content Include="COACH_OWN_LISTING.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="Create_Listing.aspx" />
+    <Content Include="css\styles.css" />
+    <Content Include="CustomerGridview.aspx" />
+    <Content Include="forgotpassword.aspx" />
+    <Content Include="guestindex.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="js\datatables-simple-demo.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="login.aspx" />
+    <Content Include="loyalty.aspx" />
+    <Content Include="MyCaptcha.aspx" />
+    <Content Include="MyPayments.aspx" />
+    <Content Include="Payment.aspx" />
+    <Content Include="PaymentGridview.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="Review.aspx" />
+    <Content Include="ReviewDetails.aspx" />
+    <Content Include="ReviewInsert.aspx" />
+    <Content Include="see_Listing.aspx" />
+    <Content Include="thank_you.aspx" />
+    <Content Include="UpdateUserProfile.aspx" />
+    <Content Include="UserProfile.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="AdminGridview.aspx.cs">
+      <DependentUpon>AdminGridview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminGridview.aspx.designer.cs">
+      <DependentUpon>AdminGridview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminregister.aspx.cs">
+      <DependentUpon>adminregister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminregister.aspx.designer.cs">
+      <DependentUpon>adminregister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookingInsert.aspx.cs">
+      <DependentUpon>BookingInsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingInsert.aspx.designer.cs">
+      <DependentUpon>BookingInsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookingPDF.aspx.cs">
+      <DependentUpon>BookingPDF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingPDF.aspx.designer.cs">
+      <DependentUpon>BookingPDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bookings.cs" />
+    <Compile Include="BookingsItemTemplate.aspx.cs">
+      <DependentUpon>BookingsItemTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingsItemTemplate.aspx.designer.cs">
+      <DependentUpon>BookingsItemTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookingView.aspx.cs">
+      <DependentUpon>BookingView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookingView.aspx.designer.cs">
+      <DependentUpon>BookingView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CCoach.cs" />
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coach.Master.cs">
+      <DependentUpon>Coach.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coach.Master.designer.cs">
+      <DependentUpon>Coach.Master</DependentUpon>
+    </Compile>
+    <Compile Include="coachregister.aspx.cs">
+      <DependentUpon>coachregister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="coachregister.aspx.designer.cs">
+      <DependentUpon>coachregister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Coach_Listing.aspx.cs">
+      <DependentUpon>Coach_Listing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coach_Listing.aspx.designer.cs">
+      <DependentUpon>Coach_Listing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="COACH_LISTING.cs" />
+    <Compile Include="COACH_OWN_LISTING.aspx.cs">
+      <DependentUpon>COACH_OWN_LISTING.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="COACH_OWN_LISTING.aspx.designer.cs">
+      <DependentUpon>COACH_OWN_LISTING.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Create_Listing.aspx.cs">
+      <DependentUpon>Create_Listing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Create_Listing.aspx.designer.cs">
+      <DependentUpon>Create_Listing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerGridview.aspx.cs">
+      <DependentUpon>CustomerGridview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerGridview.aspx.designer.cs">
+      <DependentUpon>CustomerGridview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpassword.aspx.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forgotpassword.aspx.designer.cs">
+      <DependentUpon>forgotpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="guestindex.aspx.cs">
+      <DependentUpon>guestindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="guestindex.aspx.designer.cs">
+      <DependentUpon>guestindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loyalty.aspx.cs">
+      <DependentUpon>loyalty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loyalty.aspx.designer.cs">
+      <DependentUpon>loyalty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MyCaptcha.aspx.cs">
+      <DependentUpon>MyCaptcha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyCaptcha.aspx.designer.cs">
+      <DependentUpon>MyCaptcha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyPayments.aspx.cs">
+      <DependentUpon>MyPayments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyPayments.aspx.designer.cs">
+      <DependentUpon>MyPayments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs" />
+    <Compile Include="PaymentChartData.cs" />
+    <Compile Include="PaymentGridview.aspx.cs">
+      <DependentUpon>PaymentGridview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentGridview.aspx.designer.cs">
+      <DependentUpon>PaymentGridview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Review.aspx.cs">
+      <DependentUpon>Review.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Review.aspx.designer.cs">
+      <DependentUpon>Review.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Review.cs" />
+    <Compile Include="ReviewDetails.aspx.cs">
+      <DependentUpon>ReviewDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReviewDetails.aspx.designer.cs">
+      <DependentUpon>ReviewDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewInsert.aspx.cs">
+      <DependentUpon>ReviewInsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReviewInsert.aspx.designer.cs">
+      <DependentUpon>ReviewInsert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="see_Listing.aspx.cs">
+      <DependentUpon>see_Listing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="see_Listing.aspx.designer.cs">
+      <DependentUpon>see_Listing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thank_you.aspx.cs">
+      <DependentUpon>thank_you.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thank_you.aspx.designer.cs">
+      <DependentUpon>thank_you.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUserProfile.aspx.cs">
+      <DependentUpon>UpdateUserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateUserProfile.aspx.designer.cs">
+      <DependentUpon>UpdateUserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\style.css.map" />
+    <Content Include="assets\scss\main\_global.scss" />
+    <Content Include="assets\scss\main\_responsive.scss" />
+    <Content Include="assets\scss\pages\_banner-footer.scss" />
+    <Content Include="assets\scss\pages\_section.scss" />
+    <Content Include="assets\scss\style.scss" />
+    <Content Include="assets\webfonts\arafat-font.eot" />
+    <Content Include="assets\webfonts\arafat-font.ttf" />
+    <Content Include="assets\webfonts\arafat-font.woff" />
+    <Content Include="assets\webfonts\fa-brands-400.eot" />
+    <Content Include="assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="assets\webfonts\fa-brands-400.woff" />
+    <Content Include="assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="assets\webfonts\fa-regular-400.eot" />
+    <Content Include="assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="assets\webfonts\fa-regular-400.woff" />
+    <Content Include="assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="assets\webfonts\fa-solid-900.eot" />
+    <Content Include="assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="assets\webfonts\fa-solid-900.woff" />
+    <Content Include="assets\webfonts\fa-solid-900.woff2" />
+    <Content Include="Master.Master" />
+    <Content Include="Coach.Master" />
+    <None Include="packages.config" />
+    <Content Include="User.Master" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1174</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44369/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

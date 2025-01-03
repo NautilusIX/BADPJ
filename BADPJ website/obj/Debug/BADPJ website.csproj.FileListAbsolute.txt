@@ -1,0 +1,129 @@
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\BADPJ website.dll.config
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\BADPJ website.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\BADPJ website.pdb
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\csc.exe
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\csc.exe.config
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\csc.rsp
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\csi.exe
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\csi.exe.config
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\csi.rsp
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.AppContext.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Console.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.IO.Compression.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Net.Http.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.ValueTuple.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\vbc.exe
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\vbc.exe.config
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\vbc.rsp
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\VBCSCompiler.exe
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\obj\Debug\BADPJ website.csproj.AssemblyReference.cache
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\obj\Debug\BADPJ website.csproj.CoreCompileInputs.cache
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\obj\Debug\BADPJ website.csproj.CopyComplete
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\obj\Debug\BADPJ website.dll
+C:\Users\Zhan quan\OneDrive\Documents\business app dev\BADPJ testing\BADPJ website\obj\Debug\BADPJ website.pdb
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\BADPJ website.dll.config
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\BADPJ website.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\BADPJ website.pdb
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\csc.exe
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\csc.exe.config
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\csc.rsp
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\csi.exe
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\csi.exe.config
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\csi.rsp
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.AppContext.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Console.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.IO.Compression.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Net.Http.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.ValueTuple.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\vbc.exe
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\vbc.exe.config
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\vbc.rsp
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\VBCSCompiler.exe
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\obj\Debug\BADPJ website.csproj.AssemblyReference.cache
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\obj\Debug\BADPJ website.csproj.CoreCompileInputs.cache
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\obj\Debug\BADPJ website.csproj.CopyComplete
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\obj\Debug\BADPJ website.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\obj\Debug\BADPJ website.pdb
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\Newtonsoft.Json.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\Stripe.net.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\Newtonsoft.Json.xml
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\Stripe.net.xml
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\jason\Downloads\School\sem 2 y2\BADPJ\BADPJ website\bin\itextsharp.dll
